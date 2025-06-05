@@ -1,0 +1,26 @@
+{
+  "name": "livraria",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "cls && tsx src",
+    "build": "tsc",
+    "start": "node ./dist",
+    "start2": "tsc && node ./dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Renan Marques <renanmarquess@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@types/node": "^22.15.21",
+    "prompt-sync": "^4.2.0",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/prompt-sync": "^4.2.3",
+    "eslint": "^9.27.0",
+    "tsx": "^4.19.4"
+  },
+  "description": ""
+}
