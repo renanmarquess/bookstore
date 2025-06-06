@@ -77,7 +77,7 @@ function getBookProps() {
     return newBook;
 }
 
-function getBookSearchFilters() {
+async function getBookSearchFilters() {
     let selectOption: number;
 
     do {
@@ -99,8 +99,10 @@ function getBookSearchFilters() {
         console.log("");
         console.log("Choose the category:")
         console.log('Romance: 1, Fantasy: 2, SciFi: 3, Biography: 4, History: 5, Technology: 6, Other: 7:');
-        const category: BookCategory = Number(prompt(`Enter the category: `)) - 1;
-        selectBookByCategory(category);
+        //const category: number = Number(prompt(`Enter the category: `)) - 1;
+        const category: number = Number(prompt(`Enter the category: `));
+        
+        await selectBookByCategory(category);
         initializeMenu();
     }
 }
